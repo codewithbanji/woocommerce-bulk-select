@@ -1,0 +1,45 @@
+/* .btn {
+	font-size: small;
+	cursor: pointer;
+	display:inline-block;
+	margin:0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#0071a1;
+	border-color: #0071a1;
+	border-width: 1px;
+	text-align:center;
+	transition: all 0.2s;
+  } */
+/*
+  .sm {
+	font-size: small;
+	padding: 0;
+  } */
+
+  #select-all-menu{
+	  margin-left: -10px;
+	  position: absolute;
+
+	  /* make the menu appear above the background: */
+	  z-index: 100;
+  }
+
+  /* On mouse-over */
+  /* .btn:hover {background: #eee;} */
+
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: black;}
+
+  .everything-selected{
+	outline: 2px solid dodgerblue;
+}
+
+.green{
+	color: green;
+}
