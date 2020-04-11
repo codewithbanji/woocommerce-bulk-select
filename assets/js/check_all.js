@@ -41,30 +41,4 @@ document.addEventListener("DOMContentLoaded", function() {
 		jQuery('.check-column input[type=checkbox]').prop('disabled', function(i, v) { return allSelected; });
 	});
 
-	jQuery("#posts-filter").on("submit", function(ev){
-
-		ev.preventDefault();
-		var unindexed_array =jQuery("#posts-filter").serializeArray();
-		var indexed_array = {};
-
-		jQuery.map(unindexed_array, function(n, i){
-			indexed_array[n['name']] = n['value'];
-		});
-		console.log(indexed_array);
-		indexed_array['action'] = "get_my_stupid_posts";
-		jQuery.ajax({
-			url: "admin-ajax.php",
-			type: 'GET',
-			dataType: 'json', // added data type
-			data: indexed_array,
-			success: function(res) {
-				console.log("here");
-				console.log(res);
-				alert(res);
-			},
-			error: function(res){
-				console.log(res)
-			}
-		});
-	})
 })
